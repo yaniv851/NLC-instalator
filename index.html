@@ -14,7 +14,7 @@
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <link rel="icon" href="images/instelator_Icon.jpg">
+    <link rel="icon" class="rounded-sm" href="images/instelator_Icon.jpg">
     <style>
       .gradient {
         background: linear-gradient(90deg, darkblue 0%, blue 100%);
@@ -24,21 +24,8 @@
   <body dir="rtl" class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
   
     <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <nav id="header" class="fixed w-full z-30 top-0 text-gray-500">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="pl-4 flex items-center">
-          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            <img src="/images/instelator_Icon.jpg" alt="stupid" width="60" height="70">
-            <!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-               <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" /> 
-              <path
-                class="instelator_icon"
-               
-              />
-            </svg> -->
-            תמיד איתך
-          </a>
-        </div>
         <div class="block lg:hidden pr-4">
           <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -47,8 +34,8 @@
             </svg>
           </button>
         </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-gray-900 lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
+          <ul class="list-reset lg:flex justify-start flex-1 items-center">
             <li class="mr-3">
               <button
             id="navAction"
@@ -66,8 +53,23 @@
             <li class="mr-3">
               <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"> <a href="#job"> השירותים שלי</a>
             </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"> <a href="#fam"> צרו קשר </a>
+            </li>
           </ul>
-          <a class="inline-block py-2 px-4 no-underline"> </a><a href="#fam">צור קשר</a>
+
+          <div class="pl-4 flex items-center">
+            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+              <img class="rounded-xl" src="/images/instelator_Icon.jpg" alt="stupid" width="50" height="60">
+              <!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+                 <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" /> 
+                <path
+                  class="instelator_icon"
+                 
+                />
+              </svg> -->
+            </a>
+          </div>
         </div>
       </div>
       <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -271,10 +273,10 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                למה לכם כדאי לבחור בשירות שלנו
+                למה לכם כדאי לבחור בשירות שלנו?
               </h3>
               <p class="text-gray-600 mb-8">
-                השירות שלנו נוח וזמין ללקוחות 
+                השירות שלנו נוח ותמיד זמין ללקוחות! 
             <br>
 
                 <br />
@@ -288,7 +290,7 @@
     <section class="bg-white border-b py-8">
       <div class="container mx-auto flex flex-wrap pt-4 pb-12">
         <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-          <a id="job"> :השירותים שלי </a>
+          <a id="job"> השירותים שלי :</a>
         </h2>
         <div class="w-full mb-4">
           <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -390,12 +392,16 @@
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
-        
+        מעוניינים?
       </h2>
 
-      <h3 class="my-4 text-3xl leading-tight">
-        
+      <h3 class="my-4 text-2xl leading-tight">
+        צרו קשר!
       </h3>
+
+      <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+         052-367-5936
+      </button>
 
     </section>
     <!--Footer-->
@@ -412,7 +418,6 @@
                  
                 />
               </svg> -->
-              תמיד איתך
             </a>
           </div>
           <div class="flex-1">
