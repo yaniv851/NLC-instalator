@@ -14,7 +14,7 @@
     <!--Replace with your tailwind.css once created-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
     <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <link rel="icon" class="rounded-sm" href="images/instelator_Icon.jpg">
+    <link rel="icon" class="rounded-sm" href="images/logo.jpeg">
     <style>
       .gradient {
         background: linear-gradient(90deg, darkblue 0%, blue 100%);
@@ -26,7 +26,8 @@
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-gray-500">
       <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-        <div class="block lg:hidden pr-4">
+        <img class="mr-1 rounded-xl" src="/images/logo.jpeg" alt="א.ל לוגו" width="50" height="60">
+        <div class="block lg:hidden pr-4 ml-1">
           <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>NLC</title>
@@ -36,43 +37,33 @@
         </div>
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-gray-900 lg:bg-transparent text-white p-4 lg:p-0 z-20" id="nav-content">
           <ul class="list-reset lg:flex justify-start flex-1 items-center">
-            <li class="mr-3">
-              <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            ראשי
-          </button>
+            <li class="mr-3 hover:text-gray-800">
+               <a href="#" class="inline-block no-underline py-2 px-4">
+                 ראשי
+                </a>
+                <hr>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"></a> <a href="#nada">
-                 קצת עליי
-                
+               <a href="#nada" class="inline-block no-underline hover:text-gray-800 py-2 px-4">
+                קצת עליי
+              </a>
+            </li>
+            <li class="mr-3">
+               <a href="#job" class="inline-block no-underline hover:text-gray-800 py-2 px-4">
+                השירותים שלי
                 </a>
             </li>
             <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"> <a href="#job"> השירותים שלי</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"> <a href="#fam"> צרו קשר </a>
+               <a href="#fam" class="inline-block no-underline hover:text-gray-800 py-2 px-4">
+                צרו קשר 
+                </a>
             </li>
           </ul>
 
           <div class="pl-4 flex items-center">
-            <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-              <img class="rounded-xl" src="/images/instelator_Icon.jpg" alt="stupid" width="50" height="60">
-              <!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-                 <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" /> 
-                <path
-                  class="instelator_icon"
-                 
-                />
-              </svg> -->
-            </a>
           </div>
         </div>
       </div>
-      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
     <!--Hero-->
     <div class="pt-24">
@@ -80,13 +71,13 @@
         <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
           <h1 class="my-4 text-5xl font-bold leading-tight">
             <!-- ? צריכים איסטלטור -->
-            צריכים אינסטלטור?
+            אמרתם אינסטלטור?
           </h1>
           <p class="leading-normal text-2xl mb-8">
             א.ל אינסטלציה מקנה לכם שירות איכותי נוח ומהיר שיחסוך לכם כסף וזמן דבר שנדיר לראות בשוק הישראלי כיום.
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 mb-12 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            לפרטים נוספים
+          <button class="mx-auto lg:mx-0 border-solid	border-red-600	border-2 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 mb-12 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            לפרטים נוספים - 0522512093
           </button>
         </div>
       </div>
@@ -131,7 +122,7 @@
             </h3>
           </div>
           <div class="w-full sm:w-1/2 p-6">
-            <img src="/images/icons8-plumber-64.png" class="w-full sm:h-64 mx-auto" alt="plumber-icon" style="height: 127px; width: 127px;">
+            <img src="/images/plumbing-service.jpeg" class="w-full sm:h-64 mx-auto" alt="plumber-icon" style="height: 200px; width: 300px;">
               <title>אינסטלציה</title>
               <path
                 transform="translate(-11.5 -150.75)"
@@ -263,11 +254,10 @@
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <div class="align-middle">
               <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-                למה לכם כדאי לבחור בשירות שלנו?
+                למה כדאי לכם לבחור בשירות שלנו?
               </h3>
-              <p class="text-gray-600">
-                השירות שלנו נוח ותמיד זמין ללקוחות! 
-              </p>
+              <p class="text-gray-600 text-xl">
+                שירות אמין, נוח, זמין ועדיף לכל הלקוחות.            </p>
             </div>
           </div>
         </div>
@@ -313,8 +303,7 @@
               
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                באמצעות ציוד חדיש ומתקדם, באמצעות סיב אופטי ומצלמה טרמית ובעזרת הציוד ניתן למצוא את אזור הנזילה ולאטום אותה.
-              </p>
+                איתור נזילות מים מתבצע על ידי מאתר נזילות מומחה אשר ממוקצע על מצלמת אינפרא אדום,מכשיר גז ידודתי, ומכשיר שמע אקוסטי. איתור נזילות מים מתבצע לאחר זיהוי כתמי רטיבות במקור חיצוני או פנימי בכול סוגי המבנים או בקבלת חשבון מים גבוהה. איתור נזילות מתבצע לפי בעיות צנרת מים חמים וקרים.              </p>
             </a>
           </div>
           <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
@@ -347,13 +336,31 @@
             </div>
           </div>
         </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+               שיפוצים
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+             
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                פתיחת כל סוגי הסתימות, בבית ובחצר, באמצעות שימוש בכלים חשמליים וייעודים, ובעזרת הכלים ניתן לפתוח את אזור הסתימה.
+              </p>
+            </a>
+          </div>
+          <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+            <div class="flex items-center justify-end">
+              <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+               לחץ כאן
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
           </div>
-    <section class="bg-gray-100 py-8">
-      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
-      </div>
-    </section>
     <!-- Change the colour #f8fafc to match the previous section colour -->
     <svg class="wave-top" viewBox="0 0 1439 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -386,7 +393,7 @@
       </h3>
 
       <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-         052-367-5936
+         052-251-2093
       </button>
 
     </section>
@@ -396,7 +403,7 @@
         <div class="w-full flex flex-col md:flex-row py-6">
           <div class="flex-1 mb-6 text-black">
             <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-              <img src="/images/instelator_Icon.jpg" alt="stupid" width="60" height="70">
+              <img src="/images/logo.jpeg" alt="stupid" width="60" height="70">
               <!-- <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
                  <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" /> 
                 <path
@@ -439,9 +446,6 @@
               </li>
               <li class="mt-2 inline-block mr-2 md:block md:mr-0">
                 <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">לינדין</a>
-              </li>
-              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">טוויטר</a>
               </li>
             </ul>
           </div>
